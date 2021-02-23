@@ -9,13 +9,8 @@
 /*=============================================================================
 =======                            INCLUDES                             =======
 =============================================================================*/
-#include <stdio.h>
-#include <assert.h>
-/*=============================================================================
-=======                Enums for Color Code                             =======
-=============================================================================*/
-enum MajorColor {WHITE, RED, BLACK, YELLOW, VIOLET};
-enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
+#include "EventCountColorCode.h"
+
 /*=======================================================================================================
  *  char* MajorColorNames[] : array of pointers to CONSTANT strings which has the major colors          *  
  *  char* MinorColorNames[] : array of pointers to CONSTANT strings which has the minor colors          *
@@ -37,10 +32,6 @@ const int MAX_COLORPAIR_NAME_CHARS = 16;
 int numberOfMinorColors =
     sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
 
-typedef struct {
-    enum MajorColor majorColor;
-    enum MinorColor minorColor;
-} ColorPair;
 /*=============================================================================
 =======                            Functions                            =======
 ===============================================================================*/
