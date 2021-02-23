@@ -11,7 +11,7 @@
 =============================================================================*/
 #include "EventCountColorCode.h"
 
-
+const int MAX_COLORPAIR_NAME_CHARS = 16;
 /*---------------------------------------------------------------------------*/
 /*           Test for obtaining Pair from number                             *
 *//*-------------------------------------------------------------------------*/
@@ -20,7 +20,7 @@ void testNumberToPair(int pairNumber,
     enum MinorColor expectedMinor)
 {
     ColorPair colorPair = GetColorFromPairNumber(pairNumber);
-    char colorPairNames[16];
+    char colorPairNames[MAX_COLORPAIR_NAME_CHARS];
     ColorPairToString(&colorPair, colorPairNames);
     printf("Got pair %s\n", colorPairNames);
     assert(colorPair.majorColor == expectedMajor);
