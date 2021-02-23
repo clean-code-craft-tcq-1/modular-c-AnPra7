@@ -1,5 +1,8 @@
+#ifndef EVENTCOLORCODE_H
+#define EVENTCOLORCODE_H
+
 /******************************************************************************/
-/***    \file        stats.h
+/***    \file        EventCountColorCode.h
 ***     \author      Pratik Jaiswal               
 ***
 ***     \brief       Header for EventCountColorCode.h
@@ -38,5 +41,6 @@ void ColorPairToString(const ColorPair* colorPair, char* buffer);
 ColorPair GetColorFromPairNumber(int pairNumber);
 int GetPairNumberFromColor(const ColorPair* colorPair);
 
+#endif
 
 
