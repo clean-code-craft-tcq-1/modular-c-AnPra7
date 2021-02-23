@@ -31,5 +31,12 @@ typedef struct {
 =============================================================================*/
 const int MAX_COLORPAIR_NAME_CHARS = 16;
 
+/*=============================================================================
+=======                      COMMON FUNCTIONS                            =======
+=============================================================================*/
+void ColorPairToString(const ColorPair* colorPair, char* buffer);
+ColorPair GetColorFromPairNumber(int pairNumber);
+int GetPairNumberFromColor(const ColorPair* colorPair);
+
 
 
